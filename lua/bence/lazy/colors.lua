@@ -29,7 +29,19 @@ return {
             })
         end
     },
+    {
+        "ellisonleao/gruvbox.nvim",
+        name = "gruvbox",
+        config = function()
+            require('gruvbox').setup({
+                disable_background = true,
+            })
 
+            vim.cmd("colorscheme gruvbox")
+
+            ColorMyPencils()
+        end
+    },
     {
         "rose-pine/neovim",
         name = "rose-pine",

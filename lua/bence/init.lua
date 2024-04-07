@@ -13,7 +13,7 @@ require("bence.lazy_init")
 
 -- DO NOT INCLUDE THIS
 -- DO.not
-
+ColorMyPencils("gruvbox")
 local augroup = vim.api.nvim_create_augroup
 -- local BenceGroup = augroup('bence', {})
 
