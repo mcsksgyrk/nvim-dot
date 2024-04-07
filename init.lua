@@ -1,2 +1,1 @@
-require("bence.remap")
-require("bence.set")
+require("bence")
