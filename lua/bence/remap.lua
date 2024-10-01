@@ -13,7 +13,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 -- paste over, keep old copy
 vim.keymap.set("x", "<leader>p", [["_dP]])
--- separate clipboard for system 
+-- separate clipboard for system
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 --delete to void, not to clipboard
@@ -34,3 +34,5 @@ vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 
+-- Exit terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
